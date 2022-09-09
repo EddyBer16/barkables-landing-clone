@@ -1,0 +1,325 @@
+/* POR ANGEL EDUARDO BERLANGA BOTELLO 2068867 */
+
+/*
+    GENERAL
+*/
+:root {
+    --primary-color: #f37932;
+    --secondary-color: #794133;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+button {
+    border: 3px solid var(--secondary-color);
+    border-radius: 3px;
+    background-color: transparent;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+h2 { font-size: 24px; }
+
+p {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-primary {
+    font-size: 18px;
+    padding: 5px 40px;
+}
+
+/*
+    HEADER
+*/
+header {
+    background-color: #FFF;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+header nav a {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav a:hover { color: var(--primary-color); }
+
+header nav button {
+    padding: 3px 20px;
+    font-size: 20px;
+}
+
+header nav button:hover,
+.btn-primary {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+/*
+    MAIN
+*/
+#hero {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+    HOW IT WORKS
+*/
+#HowItWorks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#HowItWorks-title {
+    height: 0;
+    color: #FFF;
+    font-weight: 700;
+    position: relative;
+    top: -25px;
+    height: 0;
+    width: 200px;
+    border-top: 20px solid var(--secondary-color);
+    border-bottom: 20px solid var(--secondary-color);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#HowItWorks .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+#HowItWorks .container .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#HowItWorks .HowItWorks-step {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#HowItWorks .Step-title { width: 40%; }
+#HowItWorks .Step-description { width: 70%; }
+
+/*
+    SECTION SEPARATOR
+*/
+main hr {
+    border-bottom: 3px dotted var(--secondary-color);
+    border-style: none none dotted;
+}
+
+/*
+    WHAT'S INSIDE THE BOX
+*/
+#WhatsInside {
+    justify-content: center;
+    align-items: center;
+}
+
+#WhatsInside .container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#WhatsInside .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100%;
+}
+
+#WhatsInside .column h2 {
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#WhatsInside .right-column {
+    background-image: url('./assets/dog_feed2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 50px 200px;
+
+    height: 600px;
+}
+
+#WhatsInside .right-column p {
+    line-height: 1.5;
+    text-align: center;
+    width: 80%;
+}
+
+.right-column h2 {
+    color: #fff;
+}
+
+/*
+    TESTIMONIALS
+*/
+#Testimonials {
+    background: var(--primary-color);
+}
+
+#Testimonials .Testimonial-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Testimonials .container,
+#Testimonials .column,
+.Testimonial-description {
+    gap: 20px;
+}
+
+.Testimonial-description { margin-left: 20px; }
+
+.Testimonial-description p { color: #fff; }
+
+.Testimonial-description a {
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+/*
+    FOOTER
+*/
+footer .container {
+    justify-content: space-between;
+}
+
+.Footer-links {
+    gap: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 3;
+}
+
+.Links-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Link {
+    font-weight: 700;
+}
+
+.Footer-contact {
+    flex-grow: 1;
+}
+
+.Footer-title { margin-bottom: 10px; }
+
+.Footer-form {
+    margin-bottom: 15px;
+}
+
+.Footer-form input {
+    height: 40px;
+    max-width: 175px;
+    border: none;
+    background: #f3f0ef;
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-size: 14pt;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.Footer-form input::placeholder {
+    color: #C9BEBB;
+}
+
+.Footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.Footer-social-link img {
+    width: auto;
+    height: 20px;
+}
